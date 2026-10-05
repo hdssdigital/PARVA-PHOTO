@@ -1,0 +1,1428 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #111111;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+}
+
+/* اسم سایت */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* منوی سایت */
+nav a {
+    text-decoration: none;
+    color: #111111;
+    margin-left: 30px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #777777;
+}
+
+/* بخش اصلی */
+main {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+main h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 18px;
+}
+
+/* دکمه */
+main a {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 30px;
+    background-color: #111111;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+main a:hover {
+    background-color: #333333;
+}
+
+/* محصولات */
+.products {
+    padding: 60px 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.products h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.product {
+    max-width: 300px;
+    margin: 0;
+    padding: 25px;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+}
+
+.product h3 {
+    font-size: 22px;
+}
+
+.product p {
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.product span {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* عکس محصول */
+.product img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* حالت هاور محصول */
+.product:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* درباره ما */
+.about {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #111111;
+    color: white;
+}
+
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.about p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 2;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* بخش ارتباط با ما */
+.contact {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.contact a {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #111111;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.contact a:hover {
+    background-color: #333333;
+}
+
+.info {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.info h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.info p {
+    font-size: 16px;
+    margin: 12px 0;
+}
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    nav a {
+        margin: 0 8px;
+        font-size: 14px;
+    }
+
+    main {
+        padding: 70px 20px;
+    }
+
+    main h2 {
+        font-size: 36px;
+    }
+
+    .products {
+        padding: 50px 15px;
+    }
+
+    .product {
+        width: 100%;
+        max-width: 320px;
+        box-sizing: border-box;
+    }
+
+    .about,
+    .info,
+    .contact {
+        padding: 60px 20px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    transition: 0.3s;
+}
+
+/* تنظیمات ظاهری بیشتر */
+
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+a {
+    transition: 0.3s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ظاهر بهتر کارت محصولات */
+
+.product {
+    transition: 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* ظاهر بهتر عکس محصولات */
+
+.product img {
+    display: block;
+}
+
+/* ظاهر بهتر لینک اینستاگرام */
+
+.contact a {
+    transition: 0.3s;
+}
+
+.contact a:hover {
+    transform: translateY(-3px);
+}
+
+/* تنظیمات موبایل */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 20px 15px;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
+
+    nav a {
+        margin: 0 5px;
+        font-size: 13px;
+    }
+
+    main h2 {
+        font-size: 32px;
+    }
+
+    main p {
+        font-size: 16px;
+    }
+
+    .products h2,
+    .about h2,
+    .info h2,
+    .contact h2 {
+        font-size: 28px;
+    }
+
+}
+
+.product-placeholder {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: #777777;
+}
+
+.shipping {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.shipping h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.shipping-items {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.shipping-items > div {
+    width: 250px;
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+}
+
+.shipping-items h3 {
+    font-size: 20px;
+}
+
+.shipping-items p {
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* فوتر */
+
+footer {
+    padding: 30px 20px;
+    text-align: center;
+    background-color: #111111;
+    color: #ffffff;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* دکمه برگشت به بالا */
+
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #111111;
+    color: white;
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.back-to-top:hover {
+    transform: translateY(-3px);
+}
+
+/* مرتب‌تر شدن کارت‌های محصولات */
+
+.product {
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.product h3 {
+    margin-bottom: 15px;
+}
+
+.product span {
+    font-size: 17px;
+}
+
+/* زیباتر شدن بخش اصلی سایت */
+
+main {
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+main h2 {
+    letter-spacing: 1px;
+}
+
+main p {
+    max-width: 600px;
+    line-height: 2;
+}
+
+/* زیباتر شدن بخش اصلی سایت */
+
+main {
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+main h2 {
+    letter-spacing: 1px;
+}
+
+main p {
+    max-width: 600px;
+    line-height: 2;
+}
+
+/* بهتر شدن ظاهر منوی سایت */
+
+nav a {
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #000000;
+    border-bottom: 1px solid #111111;
+    padding-bottom: 5px;
+}
+
+/* ظاهر بهتر لوگو */
+
+.logo {
+    letter-spacing: 3px;
+    font-size: 25px;
+}
+
+.logo::after {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 2px;
+    background-color: #111111;
+    margin-top: 6px;
+}
+
+/* فاصله و چیدمان بهتر محصولات */
+
+.products {
+    row-gap: 40px;
+}
+
+.product {
+    width: 300px;
+}
+
+.product img,
+.product-placeholder {
+    height: 280px;
+}
+
+/* زیباتر شدن بخش درباره ما */
+
+.about {
+    padding: 100px 20px;
+}
+
+.about h2 {
+    letter-spacing: 1px;
+}
+
+.about p {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 2.2;
+}
+
+/* ظاهر بهتر اطلاعات فروشگاه */
+
+.info {
+    padding: 90px 20px;
+}
+
+.info p {
+    padding: 12px 0;
+    border-bottom: 1px solid #eeeeee;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ظاهر بهتر بخش ارسال و سفارش */
+
+.shipping {
+    border-top: 1px solid #eeeeee;
+}
+
+.shipping-items > div {
+    transition: 0.3s;
+}
+
+.shipping-items > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.shipping-items h3 {
+    margin-bottom: 12px;
+}
+
+.shipping-items p {
+    margin-bottom: 0;
+}
+
+/* ظاهر بهتر بخش ارتباط با ما */
+
+.contact {
+    border-top: 1px solid #e5e5e5;
+}
+
+.contact a {
+    min-width: 220px;
+    box-sizing: border-box;
+}
+
+.contact a:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* نمایش بهتر بخش ارسال در موبایل */
+
+@media (max-width: 600px) {
+
+    .shipping {
+        padding: 60px 15px;
+    }
+
+    .shipping-items {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .shipping-items > div {
+        width: 100%;
+        max-width: 320px;
+        box-sizing: border-box;
+    }
+
+}
+
+/* ظاهر حرفه‌ای‌تر عکس محصولات */
+
+.product img {
+    transition: 0.3s;
+}
+
+.product:hover img {
+    transform: scale(1.03);
+}
+
+/* تکمیل ظاهر کارت محصولات */
+
+.product {
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.product:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.product h3 {
+    line-height: 1.5;
+}
+
+.product p {
+    color: #555555;
+}
+
+/* ظاهر بهتر دکمه اصلی */
+
+main a {
+    transition: 0.3s;
+}
+
+main a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* مرتب‌تر شدن فاصله بخش‌ها */
+
+.products,
+.about,
+.info,
+.shipping,
+.contact {
+    box-sizing: border-box;
+}
+
+/* ظاهر بهتر فوتر */
+
+footer {
+    border-top: 1px solid #222222;
+}
+
+/* طراحی جدید صفحه اصلی */
+
+main {
+    min-height: 550px;
+    padding: 80px 20px;
+    background: linear-gradient(
+        to bottom,
+        #ffffff,
+        #f4f4f4
+    );
+    position: relative;
+    overflow: hidden;
+}
+
+main h2 {
+    font-size: 56px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+main p {
+    font-size: 19px;
+    color: #555555;
+    margin-bottom: 10px;
+}
+
+main a {
+    margin-top: 35px;
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+/* خط ظریف زیر متن اصلی */
+
+main::after {
+    content: "";
+    width: 70px;
+    height: 2px;
+    background-color: #111111;
+    position: absolute;
+    bottom: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* موبایل */
+
+@media (max-width: 600px) {
+
+    main {
+        min-height: 500px;
+        padding: 60px 20px;
+    }
+
+    main h2 {
+        font-size: 38px;
+        line-height: 1.4;
+    }
+
+    main p {
+        font-size: 16px;
+    }
+
+}
+
+/* طراحی جدید کارت‌های محصولات */
+
+.products {
+    background-color: #f7f7f7;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.products h2 {
+    font-size: 38px;
+    margin-bottom: 55px;
+}
+
+.product {
+    width: 320px;
+    padding: 18px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.product img,
+.product-placeholder {
+    width: 100%;
+    height: 300px;
+    border-radius: 12px;
+}
+
+.product h3 {
+    font-size: 21px;
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+.product p {
+    color: #666666;
+    line-height: 1.9;
+}
+
+.product span {
+    font-size: 18px;
+    margin-top: 22px;
+}
+
+/* هاور واضح‌تر */
+
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.14);
+}
+
+/* هدر حرفه‌ای‌تر */
+
+header {
+    padding: 25px 60px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav a {
+    margin-left: 0;
+    padding: 9px 14px;
+    border-radius: 20px;
+}
+
+nav a:hover {
+    background-color: #111111;
+    color: #ffffff;
+    border-bottom: none;
+    padding-bottom: 9px;
+}
+
+/* موبایل */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 20px 15px;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 18px;
+        gap: 5px;
+    }
+
+    nav a {
+        padding: 7px 10px;
+        font-size: 13px;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+
+}
+
+/* ================================
+   طراحی نهایی بخش‌های سایت
+================================ */
+
+/* درباره ما */
+
+.about {
+    padding: 110px 20px;
+    background-color: #111111;
+}
+
+.about h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.about p {
+    max-width: 700px;
+    font-size: 18px;
+    line-height: 2.2;
+    color: #dddddd;
+}
+
+
+/* اطلاعات فروشگاه */
+
+.info {
+    padding: 90px 20px;
+    background-color: #ffffff;
+}
+
+.info h2 {
+    font-size: 34px;
+    margin-bottom: 35px;
+}
+
+.info p {
+    max-width: 500px;
+    padding: 15px;
+    margin: 12px auto;
+    border-bottom: 1px solid #eeeeee;
+}
+
+
+/* ارسال و سفارش */
+
+.shipping {
+    padding: 100px 20px;
+    background-color: #f6f6f6;
+}
+
+.shipping h2 {
+    font-size: 38px;
+    margin-bottom: 50px;
+}
+
+.shipping-items {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.shipping-items > div {
+    flex: 1;
+    max-width: 280px;
+    min-height: 150px;
+    padding: 30px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+    box-sizing: border-box;
+}
+
+.shipping-items h3 {
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.shipping-items p {
+    color: #666666;
+    line-height: 1.9;
+}
+
+
+/* ارتباط با ما */
+
+.contact {
+    padding: 110px 20px;
+    background-color: #eeeeee;
+}
+
+.contact h2 {
+    font-size: 40px;
+}
+
+.contact p {
+    color: #555555;
+    line-height: 2;
+}
+
+.contact a {
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+
+/* دکمه برگشت به بالا */
+
+.back-to-top {
+    z-index: 200;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* موبایل */
+
+@media (max-width: 600px) {
+
+    .about,
+    .info,
+    .shipping,
+    .contact {
+        padding: 75px 20px;
+    }
+
+    .about h2,
+    .shipping h2,
+    .contact h2 {
+        font-size: 30px;
+    }
+
+    .shipping-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .shipping-items > div {
+        width: 100%;
+        max-width: 340px;
+    }
+
+}
+
+/* توضیح محصولات */
+
+.products-intro {
+    width: 100%;
+    margin-top: -25px;
+    margin-bottom: 35px;
+    color: #666666;
+    font-size: 17px;
+}
+
+/* جزئیات محصولات */
+
+.product-details {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #eeeeee;
+}
+
+.product-details p {
+    margin: 8px 0;
+    font-size: 13px;
+    color: #666666;
+    line-height: 1.7;
+}
+
+.product-details + span {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* حرفه‌ای‌تر شدن کارت محصولات */
+
+.product {
+    position: relative;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.product img,
+.product-placeholder {
+    transition: transform 0.4s ease;
+}
+
+.product:hover img,
+.product:hover .product-placeholder {
+    transform: scale(1.04);
+}
+
+.product:hover {
+    transform: translateY(-12px);
+}
+
+/* قیمت محصول */
+
+.product > span {
+    padding-top: 12px;
+    border-top: 1px solid #eeeeee;
+}
+
+/* مرتب‌تر شدن متن کارت */
+
+.product p {
+    text-align: right;
+}
+
+.product h3 {
+    text-align: right;
+}
+
+.product-details {
+    text-align: right;
+}
+
+/* موبایل */
+
+@media (max-width: 600px) {
+
+    .product:hover {
+        transform: translateY(-5px);
+    }
+
+    .product img,
+    .product-placeholder {
+        height: 260px;
+    }
+
+}
+
+/* دکمه سفارش */
+
+.order-button {
+    display: block;
+    margin-top: 18px;
+    padding: 13px 20px;
+    background-color: #111111;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.order-button:hover {
+    background-color: #333333;
+    transform: translateY(-3px);
+}
+
+/* =========================
+   نسخه موبایل نهایی
+========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        position: sticky;
+        top: 0;
+        padding: 18px 12px;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
+
+    main {
+        min-height: 500px;
+        padding: 60px 18px;
+    }
+
+    main h2 {
+        font-size: 34px;
+        line-height: 1.5;
+    }
+
+    main p {
+        font-size: 15px;
+    }
+
+    main a {
+        padding: 13px 28px;
+    }
+
+    .products {
+        padding: 70px 15px;
+    }
+
+    .products h2 {
+        font-size: 30px;
+    }
+
+    .products-intro {
+        font-size: 14px;
+        line-height: 1.8;
+        margin-bottom: 25px;
+    }
+
+    .product {
+        width: 100%;
+        max-width: 340px;
+        padding: 15px;
+    }
+
+    .product img,
+    .product-placeholder {
+        height: 270px;
+    }
+
+    .product h3 {
+        font-size: 19px;
+    }
+
+    .product p {
+        font-size: 14px;
+    }
+
+    .about h2,
+    .shipping h2,
+    .contact h2 {
+        font-size: 29px;
+    }
+
+    .about p {
+        font-size: 15px;
+    }
+
+    .info p {
+        font-size: 14px;
+    }
+
+    .contact a {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .back-to-top {
+        width: 40px;
+        height: 40px;
+        right: 15px;
+        bottom: 15px;
+    }
+
+}
+
+/* =========================
+   بخش نهایی اینستاگرام
+========================= */
+
+.instagram-final {
+    padding: 100px 20px;
+    text-align: center;
+    background-color: #111111;
+    color: #ffffff;
+}
+
+.instagram-final h2 {
+    font-size: 36px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.instagram-final p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: #cccccc;
+    line-height: 2;
+}
+
+.instagram-final a {
+    display: inline-block;
+    padding: 14px 30px;
+    background-color: #ffffff;
+    color: #111111;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.instagram-final a:hover {
+    transform: translateY(-4px);
+}
+
+/* موبایل */
+
+@media (max-width: 600px) {
+
+    .instagram-final {
+        padding: 75px 20px;
+    }
+
+    .instagram-final h2 {
+        font-size: 29px;
+    }
+
+    .instagram-final p {
+        font-size: 14px;
+    }
+
+}
+
+/* =========================
+   تنظیمات نهایی سایت
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    cursor: pointer;
+}
+
+/* انتخاب متن */
+
+::selection {
+    background-color: #111111;
+    color: #ffffff;
+}
+
+/* اسکرول بار */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #111111;
+    border-radius: 10px;
+}
+
+/* جلوگیری از بیرون‌زدگی متن در موبایل */
+
+p,
+h2,
+h3 {
+    overflow-wrap: break-word;
+}
+
+/* =========================
+   دکمه منوی موبایل
+========================= */
+
+#menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #111111;
+}
+
+
+/* =========================
+   منوی موبایل
+========================= */
+
+@media (max-width: 600px) {
+
+    #menu-btn {
+        display: block;
+        margin-top: 10px;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    nav.open {
+        display: flex;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* =========================
+   انیمیشن ورود بخش‌ها
+========================= */
+
+.products,
+.about,
+.info,
+.shipping,
+.contact,
+.instagram-final {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.products.show,
+.about.show,
+.info.show,
+.shipping.show,
+.contact.show,
+.instagram-final.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* =========================
+   جستجوی محصولات
+========================= */
+
+.product-search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#product-search {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 30px;
+    background-color: #ffffff;
+    color: #111111;
+    font-size: 15px;
+    outline: none;
+    text-align: right;
+    transition: 0.3s;
+}
+
+#product-search:focus {
+    border-color: #111111;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+#product-search::placeholder {
+    color: #888888;
+}
+
+/* =========================
+   پیام نبودن محصول
+========================= */
+
+#no-results {
+    width: 100%;
+    display: none;
+    text-align: center;
+    margin: 10px 0 20px;
+    color: #777777;
+    font-size: 15px;
+}
+/* =========================
+   معرفی طراح سایت
+========================= */
+
+.developer-credit {
+    margin-top: 10px;
+    color: #aaaaaa;
+    font-size: 13px;
+}
+
+.developer-credit a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.developer-credit a:hover {
+    color: #bbbbbb;
+}
+  
+
+
+
